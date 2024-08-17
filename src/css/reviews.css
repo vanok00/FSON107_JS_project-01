@@ -1,21 +1,110 @@
-.header {
-  padding: 20px 0;
+.reviews {
+  padding: 32px 0;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
-}
-
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
+.reviews-title {
+  font-weight: 600;
+  font-size: 16px;
   line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.swiper-wrapper {
+  align-items: stretch;
+  margin-bottom: 32px;
+}
+
+.swiper-slide {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  padding: 32px 24px;
+  height: auto !important;
+}
+
+.reviews-avatar {
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 32px;
+}
+
+.reviews-author {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 8px;
+}
+
+.reviews-text {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.reviews-button-wrapepr {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.swiper-button {
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.swiper-button-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #fafafa;
+  fill: transparent;
+}
+
+.swiper-button-disabled {
+  border-color: rgba(250, 250, 250, 0.2);
+}
+
+.swiper-button-disabled svg {
+  stroke: #3b3b3b;
+}
+
+.reviews-notfound {
+  font-size: 30px;
+  padding: 50px;
+  color: #fafafa;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding: 48px 0;
+  }
+
+  .swiper-button {
+    width: 68px;
+    height: 68px;
+  }
+
+  .swiper-button-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews {
+    padding: 82px 0;
+  }
 }
