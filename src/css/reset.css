@@ -8,9 +8,9 @@ p {
   margin: 0;
 }
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 
 p:last-child {
