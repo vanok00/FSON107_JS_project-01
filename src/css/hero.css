@@ -35,7 +35,7 @@
   align-items: center;
   /* text-align: center; */
   flex-direction: column;
-  background-image: url(../images/hero_img/glass-mob.png);
+  background-image: url('../images/hero_img/glass-mob.png');
   background-size: contain;
   background-repeat: no-repeat;
   /* background-position: center; */
@@ -102,7 +102,7 @@
   .content-wrapper {
     width: 768px;
     height: 1024px;
-    background-image: url(../images/hero_img/Glasseffect.png);
+    background-image: url('../images/hero_img/glass-tab.png');
     position: relative;
   }
 
@@ -148,7 +148,7 @@
   .content-wrapper {
     width: 1440px;
     height: 900px;
-    background-image: url(../images/hero_img/glass-desk.png);
+    background-image: url('../images/hero_img/glass-desk.png');
   }
   .hero-header {
     font-family: 'Inter Tight', sans-serif;
