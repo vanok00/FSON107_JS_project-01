@@ -12,8 +12,8 @@ const swiper = new Swiper('.swiper', {
   modules: [Navigation],
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.reviews-button-next',
+    prevEl: '.reviews-button-prev',
   },
 
   spaceBetween: '16',
