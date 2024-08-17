@@ -19,3 +19,12 @@
 .nav-link:focus {
   color: #747bff;
 }
+
+
+.projects-text {
+  font-weight: 550;
+  font-size: 44px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #1c1d20;
+}
