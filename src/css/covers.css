@@ -55,6 +55,7 @@
   height: 100vh;
   display: flex;
   transform: rotate(16deg);
+
 }
 
 .marquee__line {
