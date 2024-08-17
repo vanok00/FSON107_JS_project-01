@@ -54,25 +54,16 @@
 }
 
 .swiper-button {
-  border: 1px solid rgba(250, 250, 250, 0.5);
-  border-radius: 60px;
-  width: 52px;
-  height: 52px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 0 transparent;
   background-color: transparent;
+  padding: 0;
 }
 
 .swiper-button-icon {
-  width: 24px;
-  height: 24px;
+  width: 52px;
+  height: 52px;
   stroke: #fafafa;
   fill: transparent;
-}
-
-.swiper-button-disabled {
-  border-color: rgba(250, 250, 250, 0.2);
 }
 
 .swiper-button-disabled svg {
@@ -92,14 +83,13 @@
     padding: 48px 0;
   }
 
-  .swiper-button {
-    width: 68px;
-    height: 68px;
+  .reviews-button-wrapepr {
+    gap: 20px;
   }
 
   .swiper-button-icon {
-    width: 32px;
-    height: 32px;
+    width: 68px;
+    height: 68px;
   }
 }
 
