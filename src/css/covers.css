@@ -21,63 +21,49 @@
 } */
 
 
- .covers {
-  background-image: url('/images/covers_img/elements_vectors.png');
+ .visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   border: 0;
+ }
+
+.covers {
   background-size: cover;
   padding: 20px;
-}
-
- .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-body {
-  margin: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 .content {
   position: relative;
 }
 
+
 .marquee {
-  position: absolute;
-  right: -800px;
-  left: 0;
-  overflow: hidden;
-  font-family: "Pridi", sans-serif;
-  font-weight: 600;
-  font-size: 34px;
-  text-transform: uppercase;
-}
+    background-image: url('/images/covers_img/elements_vectors.png');
+    position: absolute;
+    right: -800px;
+    left: 0;
+    overflow: hidden;
+  }
+
 
 .marquee__inner {
   height: 100vh;
   display: flex;
-  transform: rotate(10deg);
+  transform: rotate(16deg);
 }
 
 .marquee__line {
- 
-  flex-shrink: 0;
+   flex-shrink: 0;
   margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: calc(100% / 8); */
-  white-space: nowrap; 
+  white-space: nowrap;
   animation-name: marqueeLine;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
@@ -92,6 +78,4 @@ body {
   to {
     transform: translateX(-180%);
   }
-}  
-
-
+}
