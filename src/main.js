@@ -7,4 +7,3 @@ import "./js/FAQ";
 import "./js/covers";
 import "./js/reviews";
 import "./js/work_together";
-
