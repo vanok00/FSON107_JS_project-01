@@ -21,7 +21,7 @@
 }
 
 .hero {
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 }
 
 .content-wrapper {
@@ -100,7 +100,7 @@
   }
 
   .content-wrapper {
-    width: 768px;
+    width: 734px;
     height: 1024px;
     background-image: url('../images/hero_img/glass-tab.png');
     position: relative;

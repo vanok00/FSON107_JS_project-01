@@ -1,23 +1,27 @@
-<header class="header" id="header">
+<header class="header container" id="header">
   <div class="mobile-header">
-    <img src="../images/header_img/logo.png" alt="Profile Image" class="profile-image">
+    <img src="./images/header_img/logo.png" alt="Profile Image" class="profile-image">
+  
     <div class="menu-wrapper">  
         <a href="" class="menu-toggle">Menu</a>
       </div>
 
     <div class="burger-icon" id="burger-icon">
-        <span></span>
-        <span></span>
+      <button type="button" class="header-menu-open-btn">
+        <svg class="header-menu-icon-svg" width="34" height="34">
+            <use href="../images/header_img/menu.svg#icon-menu-05"></use>
+        </svg>
+    </button>
     </div>
     <button class="order-button-desktop">Order the project</button>
 </div>
 
 <div class="mobile-menu-overlay" id="mobile-menu">
-    <div class="close-icon" id="close-menu">
+  <button type="button" class="mob-menu-btn">
       <svg width="28" height="28">
       <use href="../images/icons/symbol-defs.svg#icon-close-btn"></use>
     </svg>
-  </div>
+  </button>
     <nav class="mobile-menu-nav mob-menu-desktop">
       <ul class="mob-menu-list">
         <li class="mob-menu-item"><a href="#about" class="menu-link">About me</a></li>
@@ -29,4 +33,5 @@
     <button class="order-button">Order the project</button>
 
 </div>
+
 </header>
