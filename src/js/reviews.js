@@ -6,14 +6,14 @@ import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 
 const reviewsSection = document.querySelector('#reviews');
-const reviewsList = document.querySelector('.swiper-wrapper');
+const reviewsList = document.querySelector('.reviews-list');
 
-const swiper = new Swiper('.swiper', {
+const reviewsSwiper = new Swiper('.reviews-swiper', {
   modules: [Navigation],
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.reviews-controls-next',
+    prevEl: '.reviews-controls-prev',
   },
 
   spaceBetween: '16',
@@ -65,7 +65,7 @@ function renderReviews(reviews) {
   const markup = reviews
     .map(
       ({ author, avatar_url, review }) => `
-    <li class="swiper-slide">
+    <li class="reviews-list-item swiper-slide">
       <img class="reviews-avatar" src="${avatar_url}" alt="Review author" loading="lazy"/>
       <h3 class="reviews-author">${author}</h3>
       <p class="reviews-text">${review}</p>
