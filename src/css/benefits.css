@@ -19,3 +19,163 @@
 .nav-link:focus {
   color: #747bff;
 }
+/* СТИЛІ ДЛЯ МОБІЛЬНОГО */
+
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.benefits {
+  background-color: #1c1d20;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: auto;
+  width: 375px;
+}
+.benefits-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.benefits-item {
+  background: #242527;
+  border-radius: 20px;
+  padding: 24px;
+  width: 344px;
+  height: 270px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.bnfts-icon-container {
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  background: #ed3b44;
+  stroke: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+.bnfts-item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 8px;
+}
+.bnfts-item-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+/* .order-container {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 9px 18px;
+  width: 187px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+} */
+.order-link {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px 32px;
+  width: 187px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  /* gap: 10px; */
+}
+
+/* СТИЛІ ДЛЯ ПЛАНШЕТУ  */
+
+@media only screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: auto;
+    width: 768px;
+  }
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+  .benefits-title {
+    font-size: 20px;
+  }
+}
+
+/* СТИЛІ ДЛЯ ПК  */
+
+@media only screen and (min-width: 1280px) {
+  .benefits {
+    padding-top: 82px;
+    padding-bottom: 82px;
+    padding-left: 32px;
+    padding-right: 32px;
+    /* margin: auto; */
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .info-container {
+  }
+
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    /* row-gap: 16px;
+    column-gap: 16px; */
+    width: 680px;
+  }
+  .benefits-item {
+    width: 332px;
+  }
+
+  .benefits-title {
+    font-size: 20px;
+  }
+}
