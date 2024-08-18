@@ -6,14 +6,14 @@ import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 
 const reviewsSection = document.querySelector('#reviews');
-const reviewsList = document.querySelector('.swiper-wrapper');
+const reviewsList = document.querySelector('.reviews .swiper-wrapper');
 
-const swiper = new Swiper('.swiper', {
+const reviewsSwiper = new Swiper('.reviews-swiper', {
   modules: [Navigation],
 
   navigation: {
-    nextEl: '.reviews-button-next',
-    prevEl: '.reviews-button-prev',
+    nextEl: '.reviews-controls-next',
+    prevEl: '.reviews-controls-prev',
   },
 
   spaceBetween: '16',

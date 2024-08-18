@@ -35,13 +35,13 @@
   color: rgba(250, 250, 250, 0.6);
 }
 
-.reviews-button-wrapepr {
+.reviews-controls {
   display: flex;
   justify-content: center;
   gap: 12px;
 }
 
-.reviews-button {
+.reviews-controls-btn {
   border: 0 transparent;
   background-color: transparent;
   padding: 0;
@@ -83,7 +83,7 @@
     padding: 48px 0;
   }
 
-  .reviews-button-wrapepr {
+  .reviews-controls {
     gap: 20px;
   }
 
