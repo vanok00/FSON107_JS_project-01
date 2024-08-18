@@ -20,7 +20,7 @@
   color: #747bff;
 } */
 
-
+*******************************
  .visually-hidden {
   position: absolute;
     width: 1px;
@@ -75,13 +75,24 @@
   animation-iteration-count: infinite;
 }
  
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+  }
+}
 
 @keyframes marqueeLine {
   from {
-    transform: translateX(-20%);
+   transform: translateX(-20%);
   }
 
   to {
     transform: translateX(-180%);
   }
 }
+
+
+
