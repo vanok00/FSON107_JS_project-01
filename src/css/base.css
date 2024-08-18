@@ -3,7 +3,9 @@ body{
     background: #1c1d20;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 .container {
     max-width: 100%;

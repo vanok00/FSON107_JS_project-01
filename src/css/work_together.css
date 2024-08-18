@@ -1,4 +1,4 @@
-/* Vite promo styles */
+/* Vite promo styles
 .vite-promo {
   padding: 5rem 0;
 }
@@ -89,4 +89,315 @@
   border-radius: 50%;
   background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   filter: blur(4.5rem);
+} */
+
+
+
+/*----------------------------------------------------------[0]DEFAULT SETTINGS----------------------------- */
+
+body{
+  font-family: "Inter Tight";
+  /* background-color:#242527; */
+  margin: 0;
+  padding: 0;  
+}
+a{
+ text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+
+
+
+/* ------------------------------------------------------------------------MOBILE 375 WIDTH---------------------------------------- */
+
+
+
+
+
+
+
+/* ----------------------------------------------------------[1]TITLE-FORM----------------------------------------------------------------- */
+
+
+/* 1.1 Form Container Settings */
+
+
+
+.form-section{           /* moobile 375 settings start */
+ 
+padding-left: 16px;
+padding-right: 16px;   
+max-width: 375px;
+padding-top: 48px;
+padding-bottom: 32px;
+
+
+  
+
+ 
+
+}
+/* 1.2 Title Form Settings */
+.form-title {
+  color: #FAFAFA;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -1.2px;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+/* 1.3 h2 title form settings */
+.title-start {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.accent {
+  color: #ED3B44;
+  margin-left: 8px;
+}
+
+/* 1.4 Img Form */
+.title-img {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  margin-right: 8px;
+}
+
+/*----------------------------------------------------------[2]FORM INPUTS------------------------------------------------------ */
+/* 2.1  Form Setttings */
+.feedback-form{
+ display: flex;
+ flex-direction: column;
+
+ margin: 0;
+ padding: 0;
+ gap: 20px;
+
+}
+/* 2.2 Feedback Button */
+.feedback-button{
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background-color: #ED3B44;
+  border-radius: 50%;
+  border: none;
+  margin-top: 12px;
+  font-family: "Inter Tight";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  color: #FAFAFA;
+  cursor: pointer;
+}
+/* 2.3 Feedback email input */
+.email-input{
+width: 100%;
+height: 44px;
+background-color: transparent;
+font-family: "Inter Tight";
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: -0.32px;
+color: #FAFAFA;
+border: none;
+border-bottom: 1px solid rgba(250, 250, 250, 0.20);
+
+}
+.email-input:invalid{
+border-bottom: 1px solid #E74A3B;
+}
+/* 2.4 Feedback comment input */
+.text-input{
+  font-size: 16px;
+  font-family: "Inter Tight";
+  font-weight: 500;
+  line-height: 1.5; 
+  letter-spacing: -0.32px;
+  background-color: transparent;
+  width: 100%;
+  height: 44px;
+  color: #FAFAFA;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.20);
+  
+}
+
+/* -----------------------------------------------------------[3]FORM CONTACTS----------------------------------------------------- */
+/* 3.1 Positioning of contacts */
+.feedback-contacts{
+  display: flex;
+  flex-direction: row;
+  gap:4px;
+  margin-top: 64px;
+  
+}
+/* 3.2 Li Styling */
+.feedback-item{
+  display: flex;
+  padding: 10px 12px;
+  justify-content: center;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.20);
+
+  font-family: "Inter Tight";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.28px;
+}
+.link-feed{
+  color:#FAFAFA;
+}
+
+/* ------------------------------------------------[4]HOVERS------------------------------------- */
+/* 4.1 button hover */
+.feedback-button:hover{
+  background-color:#E0373F;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 4.2 Li hover */
+.feedback-item:hover{
+  border: 1px solid rgba(250,250, 250);
+  transition: .3s cubic-bezier(.4,0,.2,1);
+}
+/* 4.3 hover input  */
+.email-input:hover{
+  border-bottom: 1px solid rgba(250, 250, 250);
+  transition: .3s cubic-bezier(.4,0,.2,1);
+}
+.text-input:hover{
+  border-bottom: 1px solid rgba(250, 250, 250);
+  transition: .3s cubic-bezier(.4,0,.2,1);
+ 
+}
+
+/* ---------------------------------------------------------TABLET 768 WIDTH --------------------------------------------------- */
+
+@media screen and (min-width: 768px){   /* width 768 start*/
+   /* 1.1 section settings */
+  .form-section{
+      padding-left: 32px;
+      padding-right: 32px; 
+      padding-top: 88px;
+      max-width: 768px;
+      padding-bottom: 169px;
+  }
+  
+/* 1.2 title-settings*/
+.form-title {
+
+  font-size: 64px; 
+  line-height: 64px;
+  letter-spacing: -1.92px;
+  
+}
+.title-start {
+  margin-bottom: 7px;
+}
+.title-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 24px;
+  margin-right: 8px;
+}
+.accent {
+  margin-left: 15px;
+}
+/* 1.3 form settings*/
+  
+ 
+  .feedback-form{
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+  }
+
+
+  .text-input{
+   width: 245px;
+ 
+  }
+  .email-input{
+      width: 245px;
+  }
+  .feedback-button{
+      width: 150px;
+      height: 150px;
+  }
+  .feedback-contacts{
+    gap: 8px;
+  }
+
+}
+/* ---------------------------------------------------------DESKTOP 1440 WIDTH --------------------------------------------------- */
+@media screen and (min-width: 1440px) {   /* width 1440 start*/
+  /* 1.1 section settings */
+  .form-section{
+    padding-left: 196px;
+    padding-right: 196px; 
+    padding-top: 88px;
+    max-width: 1440px;
+    
+}
+
+/* 1.2 title-settings*/
+.form-title {
+
+font-size: 64px; 
+line-height: 64px;
+letter-spacing: -1.92px;
+
+}
+.title-start {
+margin-bottom: 7px;
+}
+.title-img {
+width: 70px;
+height: 70px;
+border-radius: 24px;
+margin-right: 8px;
+}
+.accent {
+margin-left: 15px;
+}
+/* 1.3 form settings*/
+
+
+.feedback-form{
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.text-input{
+ width: 390px;
+
+}
+.email-input{
+    width: 390px;
+}
+.feedback-button{
+    width: 150px;
+    height: 150px;
+}
+
+
 }

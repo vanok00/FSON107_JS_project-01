@@ -1,21 +1,176 @@
-.header {
-  padding: 20px 0;
-}
 
-.nav-list {
+
+.mobile-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  background: transparent;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.profile-image {
+  width: 172px;
+  height: 80px;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.menu-toggle {
+  display: none;
+}
+
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.burger-icon span {
+  display: block;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/header_img/Glass-effect.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.mobile-menu-overlay.active {
+  transform: translateX(0);
+}
+
+.close-icon {
+  position: absolute;
+  top: 32px;
+  right: 16px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.mobile-menu-nav{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.menu-link {
+font-weight: 500;
+font-size: 16px;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #fafafa;
+margin-bottom: 12px;
+}
+
+.menu-link:hover {
+  color: #A11F24;
+}
+
+.order-button {
+  background-color: #ed3b44;
+  min-width: 164px;
+border-radius: 60px;
+padding: 14px 31px;
+font-weight: 500;
+font-size: 14px;
+color: #fafafa;
+
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: #e0373f;
+
+}
+
+.order-button-desktop{
+  display: none;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .header {
+      padding: 16px 32px;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    font-weight: 500;
+font-size: 16px;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #fafafa;
+background-color: transparent;
+}
+
+
+/* .order-button {
+    margin-left: auto;
+} */
+
+
+.mobile-menu {
+display: none;
+position: absolute;
+top: 50px;
+right: 0;
+background-color: #333;
+width: 200px;
+padding: 20px;
+}
+
+.mobile-menu ul {
+list-style-type: none;
+padding: 0;
+}
+.mobile-menu-overlay {
+display: none;
+}
+
+.mobile-menu ul li {
+margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+color: white;
+text-decoration: none;
+}
+
+.hidden {
+display: none;
+}
+
+/* .menu-wrapper {
+position: relative;
+} */
+.burger-icon {
+  display: none;
+}
+
+
 }
