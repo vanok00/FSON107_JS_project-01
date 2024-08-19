@@ -1,40 +1,4 @@
-/* .header {
-  padding: 20px 0;
-}
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
-}
-
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-} */
-
-*******************************
- /* .visually-hidden {
-  position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-    /* display: none; */
-    /* visibility: hidden;  */
-    /* opacity: 0.0; */
-    /* pointer-events: none;
- } */ 
 h2 .covers.visually-hidden {
     position: absolute;
       width: 1px;
