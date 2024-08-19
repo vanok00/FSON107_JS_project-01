@@ -1,16 +1,13 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import Swiper from 'swiper';
-import 'swiper/css';
-import { Navigation } from 'swiper/modules';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 const reviewsSection = document.querySelector('#reviews');
 const reviewsList = document.querySelector('.reviews-list');
 
 const reviewsSwiper = new Swiper('.reviews-swiper', {
-  modules: [Navigation],
-
   navigation: {
     nextEl: '.reviews-controls-next',
     prevEl: '.reviews-controls-prev',
