@@ -54,7 +54,7 @@
   letter-spacing: -0.4px;
   cursor: pointer;
 
-  align-items: flex-start;
+  align-items: baseline;
   gap: 20px;
   padding: 15px 0;
 }
@@ -91,6 +91,9 @@
 
   padding: 0;
 }
+.ac-panel > .ac-text {
+  margin-bottom: 20px;
+}
 
 .ac.is-active .ac-panel {
   max-height: 1000px;
@@ -104,6 +107,13 @@
   .faq-section {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .faq-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
 
   .ac {
@@ -131,12 +141,5 @@
   }
   .ac:nth-child(6) {
     padding-left: 32px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .faq-section {
-    padding-top: 82px;
-    padding-bottom: 82px;
   }
 }
