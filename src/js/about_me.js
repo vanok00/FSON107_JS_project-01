@@ -1,26 +1,40 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // знаходим всі кнопки аккордеона
-  const accButtons = document.querySelectorAll('.accordion-btn');
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
-  accButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      // знаходим наступний елемент списку
-      const content = button.nextElementSibling;
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
-      // перемикаєм клас для показу або скриття контенту
-      if (content.classList.contains('show')) {
-        content.classList.remove('show');
-        button.classList.remove('active');
-      } else {
-        // закриваєм всі інші секції
-        document.querySelectorAll('.descrip-text-list.show').forEach(item => {
-          item.classList.remove('show');
-          item.previousElementSibling.classList.remove('active');
-        });
-        // відкриваєм наступну секцію
-        content.classList.add('show');
-        button.classList.add('active');
-      }
-    });
-  });
+
+
+new Accordion('.about-info-list', {elementClass: 'info-item',
+    triggerClass: 'info-icon-wrapper',
+    panelClass: 'info-item-panel',
+})
+
+const swiper = new Swiper('.tec-swiper-container', {
+  direction: 'horizontal',
+  loop: true,
+  effect: 'slide',
+  breakpointsBase: 'container',
+  slidesPerView: 2,
+  // slidesPerGroup: 4,
+  // slidesPerGroupSkip: 1,
+  // centeredSlides: false,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 5,
+    },
+  },
+  navigation: {
+    nextEl: '.about-button-next',
+  },
+  keyboard: {
+        enabled: true,
+      },
 });

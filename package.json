@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "accordion-js": "^3.3.4",
     "glob": "^8.1.0",
     "vite": "^5.3.5"
   },

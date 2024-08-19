@@ -1,135 +1,107 @@
-<!-- Section About Me -->
-
-<section class="about-me-section" id="about-me-id">
-  <div class="container">
-    <h2 class="visually-hidden">About me</h2>
-    <div class="about-me-header">
-      <p class="about-me-header-prh">
-        I work with people all over the world to create impressive and
-        <span class="span-func">functional</span>
-        <span class="span-web">websites</span> that reflect each client's unique
-        personality.
-      </p>
-    </div>
-    <picture class="image">
-      <source
-        srcset="
-          ./images/about_me_img/image-about-me-mob-min.png    1x,
-          ./images/about_me_img/image-about-me-mob-min@2x.png 2x
+<section id="about" class="about-section">
+    <div class="about-container container">
+        <h2 class="about-title visually-hidden">About me</h2>
+    <div class="about-first-wrapper">
+        <div class="about-me">
+            <p class="about-me-text">I work with people all over the world to create impressive and 
+            <span class="about-me-text-decor">functional</span> 
+            <span class="about-me-text-second-decor">websites</span>
+             that reflect each client's unique personality.</p>
+        </div>
+        <div class="about-photo">
+            <picture class="about-picture">
+                <source
+                   srcset="
+          ../images/about_me_img/about-me-desk.jpg,
+          ../images/about_me_img/about-me-desk-2x.jpg
         "
-        media="(max-width: 767px)"
-      />
-      <source
-        srcset="
-          ../images/about_me_img/image-about-me-tab-min.png   1x,
-          ./images/about_me_img/image-about-me-tab-min@2x.png 2x
+                  media="(min-width: 1440px)"
+                />
+                <source
+                    srcset="
+          ../images/about_me_img/about-me-tab.jpg,
+          ../images/about_me_img/about-me-tab-2x.jpg
         "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ../images/about_me_img/image-about-me-desk-min.png   1x,
-          ./images/about_me_img/image-about-me-desk-min@2x.png 2x
+                  media="(min-width: 768px)"
+                />
+                <source
+   srcset="
+          ../images/about_me_img/mob-about-me-img.jpg,
+          ../images/about_me_img/mob-about-img-2x.jpg
         "
-        media="(min-width: 1440px)"
-      />
-
-      <img
-        src="./images/about_me_img/image-about-me.png"
-        alt="lloyd-jefferson-picture"
-      />
-    </picture>
-
-    <div class="description">
-      <ul class="description-list">
-        <li class="accordion-container">
-          <div class="descrip-cont">
-            <h2 class="title-desctption">about me</h2>
-            <button type="button" class="accordion-btn">button acc</button>
-          </div>
-
-          <ul class="descrip-text-list">
-            <li class="descrip-about-title">
-              <p class="descrip-about-prh">
-                I am Lloyd Jefferson, a talented programmer with extensive
-                expertise in software development. I have an understanding of
-                different programming languages and technologies, always ready
-                to improve my skills. I always follow the latest trends and look
-                for unconventional, creative solutions to problems. I have a
-                high level of analytical skills and am able to effectively solve
-                even the most difficult tasks encountered on the way.
-              </p>
-            </li>
-            <li class="descrip-about-title">
-              <p class="descrip-about-prh">
-                Able to work both independently and in a team. I can effectively
-                cooperate with colleagues, exchanging ideas and finding optimal
-                solutions. Professional maturity allows you to calmly cope with
-                challenges and stressful situations, while maintaining a high
-                quality of work. I am always looking for opportunities for
-                self-improvement. I actively study new technologies and
-                practices to stay abreast of the latest innovations. I have a
-                strong understanding of various programming languages,
-                frameworks and architectural concepts that allow me to create
-                efficient and scalable software.
-              </p>
-            </li>
-          </ul>
-        </li>
-        <li class="accordion-container">
-          <div class="descrip-cont">
-            <h2 class="title-desctption">role</h2>
-            <button type="button" class="accordion-btn">button acc</button>
-          </div>
-
-          <ul class="descrip-text-list">
-            <li class="descrip-role-title">
-              <p class="descrip-role-prh">Frontend development</p>
-            </li>
-            <li class="descrip-role-title">
-              <p class="descrip-role-prh">HeadlessCMS, Wordpress</p>
-            </li>
-            <li class="descrip-role-title">
-              <p class="descrip-role-prh">Blender (enjoy)</p>
-            </li>
-          </ul>
-        </li>
-        <li class="accordion-container">
-          <div class="descrip-cont">
-            <h2 class="title-desctption">education</h2>
-            <button type="button" class="accordion-btn">button acc</button>
-          </div>
-
-          <ul class="descrip-text-list">
-            <li class="descrip-educ-title">
-              <p class="descrip-educ-prh">
-                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
-                York
-              </p>
-            </li>
-            <li class="descrip-educ-title">
-              <p class="descrip-educ-prh">
-                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
-                School, New York
-              </p>
-            </li>
-            <li class="descrip-educ-title">
-              <p class="descrip-educ-prh">
-                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
-              </p>
-            </li>
-          </ul>
-        </li>
-      </ul>
+                  media="(max-width: 767px)"
+                />
+    
+                <img
+                  src="../img/about-me/about-me-1x.jpg"
+                  alt="Lloyd Jefferson photo"
+                />
+              </picture>
+        </div>
     </div>
-    <div class="tech-skills">
-      <button type="button" class="btn-skills">html/css</button>
-      <button type="button" class="btn-skills">JavaScript</button>
-      <button type="button" class="btn-skills">React</button>
-      <button type="button" class="btn-skills">Node.js</button>
-      <button type="button" class="btn-skills">React Native</button>
-      <button type="button" class="btn-skills">Soft scills</button>
-      <button type="button" class="btn-arrow-right"></button>
-    </div>
-  </div>
+    <ul class="about-info-list">
+        <li class="info-item">
+                    <h3 class="info-item-title "><button type="button" class="info-item-btn">
+                        About me
+                        <span class="info-icon-wrapper">
+                            <svg class="info-icon" width="12" height="12"><use href="../images/icons/icons.svg#icon-arrow-down"></use>
+                            </svg>
+                        </span>
+                    </button></h3>
+                <div class="info-item-panel">
+                    <p class="info-item-text info-item-summery-text">I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of different programming languages ​​and technologies, always ready to improve my skills. I always follow the latest trends and look for unconventional, creative solutions to problems. I have a high level of analytical skills and am able to effectively solve even the most difficult tasks encountered on the way.</p>
+                    <p class="info-item-text">Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas and finding optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful situations, while maintaining a high quality of work.I am always looking for opportunities for self-improvement. I actively study new technologies and practices to stay abreast of the latest innovations. I have a strong understanding of various programming languages, frameworks and architectural concepts that allow me to create efficient and scalable software.</p>
+                </div>
+                <hr class="info-items-divider">
+        </li>
+        <li class="info-item">
+                <h3 class="info-item-title"><button class="info-item-btn">
+                    rOLE<span class="info-icon-wrapper">
+                        <svg class="info-icon" width="12" height="12"><use href="../images/icons/icons.svg#icon-arrow-down"></use>
+                        </svg>
+                    </span>
+                </button></h3>
+            <div class="info-item-panel">
+                <p class="info-item-text info-item-role-text">Frontend development</p>
+                <p class="info-item-text info-item-role-text">HeadlessCMS,Wordpress</p>
+                <p class="info-item-text">Blender(enjoy)</p>
+            </div>
+            <hr class="info-items-divider">
+        </li>
+        <li class="info-item">
+                <h3 class="info-item-title"><button class="info-item-btn">
+                    eDUCATION<span class="info-icon-wrapper">
+                            <svg class="info-icon" width="12" height="12"><use href="../images/icons/icons.svg#icon-arrow-down"></use>
+                            </svg>
+                        </span>
+                </button></h3>
+                
+            <div class="info-item-panel">
+                <p class="info-item-text info-item-education-text">2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</p>
+                <p class="info-item-text info-item-education-text">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p>
+                <p class="info-item-text info-item-education-text">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+            </div>
+            <hr class="info-items-divider">
+        </li>
+    </ul>
+        
+    <div class="tec-swiper-container">
+            <div class="swiper-wrapper tec-list">
+              <!-- Slides -->
+              <div class="swiper-slide tec-item"><div class="tec-item-descr">HTML/CSS</div></div>
+              <div class="swiper-slide tec-item"><div class="tec-item-descr">JavaScript</div></div>
+              <div class="swiper-slide tec-item"><div class="tec-item-descr">React</div></div>
+              <div class="swiper-slide tec-item"><div class="tec-item-descr">Node.js</div></div>
+              <div class="swiper-slide tec-item"><div class="tec-item-descr">React Native</div></div>
+              <div class="swiper-slide tec-item"><div class="tec-item-descr">Soft skills</div></div>
+            </div>
+         <div class="tec-navigation">
+            <button class="about-button-next arrow-btn-next" type="button">
+                <svg class="tec-swipe-icon" width="28" height="28">
+                <use href="../images/icons/icons.svg#icon-arrow-narrow-right1"></use>
+              </svg>
+            </button>
+        </div>    
+        </div>
+        
 </section>

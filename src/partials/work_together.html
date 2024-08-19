@@ -1,26 +1,41 @@
-<section class="form-section">
-    <!-- Form Title -->
+<section class="form-section container" id="contact-form-section">
     <h2 class="form-title">
-        <span class="title-start">
-          <img src="../images/work_together_img/image.jpg" class="title-img" alt="">
-          Let's<span class="accent">work</span>
-        </span>
-        <span class="title-end">together</span>
-      </h2>
-    <!-- Form Inputs -->
-
-<form class="feedback-form" autocomplete="off">
-    <label><input  pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" type="email" class="email-input" placeholder="clients@gmail.com"></label>
-    <label><input  type="text" class="text-input" placeholder="comments"></textarea></label>
-    <button type="submit" class="feedback-button">Send</button>
-</form>
-
-<div class="feedback-contacts-div">
+      <span class="title-start">
+        <picture class="title-img">
+          <source srcset="./images/work_together_img/form-portrait.png 1x, ./images/work_together_img/form-portrait-2x.png 2x" media="(min-width: 376px)">
+          <source srcset="./images/work_together_img/form-portrait-mob.png 1x, ./images/work_together_img/form-portrait-mob-2x.png 2x" media="(max-width: 375px)">
+          <img src="./images/work_together_img/form-portrait.png" alt="Lloyd Jefferson" loading="lazy">
+        </picture>
+        Let's<span class="accent">work</span>
+      </span>
+      <span class="title-end">together</span>
+    </h2>
+    <form class="feedback-form" autocomplete="off">
+      <label>
+        <input pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" type="email" class="email-input" placeholder="clients@gmail.com">
+      </label>
+      <label>
+        <input type="text" class="text-input" placeholder="comments">
+      </label>
+      <button type="submit" class="feedback-button">Send</button>
+    </form>
     <ul class="feedback-contacts">
-        <li class="feedback-item"><a class="link-feed" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
-        <li class="feedback-item"><a class="link-feed" href="tel:++3801111111111">+380 11 1111 11 11</a></li>
+      <li><a class="feedback-contact" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
+      <li><a class="feedback-contact" href="tel:+3801111111111">+380 11 1111 11 11</a></li>
     </ul>
-</div>
-
-
-</section>
+  </section>
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button type="button" class="close-button" data-modal-close>
+        <svg class="close-icon" width="22" height="22">
+          <use href="./images/icons/symbol-defs.svg#icon-x"></use>
+        </svg>
+      </button>
+      <h5 class="modal-title">
+        Thank you for your interest in cooperation!
+      </h5>
+      <p class="modal-text">
+        The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>

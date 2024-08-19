@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const swiper = new Swiper('.swiper', {
+const projectsSwiper = new Swiper('.projects-swiper', {
   grabCursor: true,
   mousewheel: true,
   speed: 500,

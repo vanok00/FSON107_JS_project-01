@@ -1,4 +1,4 @@
-.header {
+/* .header {
   padding: 20px 0;
 }
 
@@ -18,4 +18,137 @@
 .nav-link:hover,
 .nav-link:focus {
   color: #747bff;
+} */
+
+*******************************
+ .visually-hidden {
+  position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+ }
+
+.covers {
+  background-size: cover;
+  padding: 20px;
+}
+
+.content {
+  margin-bottom: 45px;
+  position: relative;
+
+    background-size: cover;
+    
+
+
+}
+
+
+.marquee {
+    background-image: url('/images/covers_img/elements_vectors.png');
+    /* position: absolute; */
+    right: -800px;
+    left: 0;
+    overflow: hidden;
+  }
+
+
+.marquee__inner {
+  display: flex;
+  transform: rotate(16deg);
+  gap: 10px;
+}
+
+.marquee__line {
+   flex-shrink: 0;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  width: 282px;
+height: 162px;
+margin-bottom: 25px;
+}
+
+.big-pictures {
+width: 282px;
+max-height: 162px;
+}
+ 
+@media screen and (max-width: 767px) {
+  .marquee {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+   height: 508px;
+  }
+}
+
+@keyframes marqueeLine {
+  from {
+   transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .marquee_line {
+    width: 544px;
+    height: 314px;
+  }
+
+  .content{
+    margin-bottom: 45px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 1440px) {
+  .marquee_line {
+    width: 544px;
+    height: 314px;
+
+  }
+
+  .big-pictures{
+    width: 544px;
+    height: 314px;
+
+  /* object-fit: cover; */
+  }
+  .marquee__inner {
+    gap: 40x;
+  }
+
+  .content{
+    margin-bottom: 45px;
+  }
+
+  @keyframes marqueeLine {
+    from {
+     transform: translateX(100%);
+    }
+  
+    to {
+      transform: translateX(-180%);
+    }
+  }
+
+
 }

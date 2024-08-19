@@ -12,12 +12,12 @@
   text-transform: uppercase;
 }
 
-.swiper-wrapper {
+.reviews-list {
   align-items: stretch;
   margin-bottom: 32px;
 }
 
-.swiper-slide {
+.reviews-list-item {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
@@ -47,27 +47,28 @@
   color: rgba(250, 250, 250, 0.6);
 }
 
-.reviews-button-wrapepr {
+.reviews-controls {
   display: flex;
   justify-content: center;
   gap: 12px;
 }
 
-.swiper-button {
-  border: 0 transparent;
+.reviews-controls-btn {
+  border: 1px solid rgba(250, 250, 250, 0.5);
   background-color: transparent;
-  padding: 0;
-}
-
-.swiper-button-icon {
+  border-radius: 60px;
   width: 52px;
   height: 52px;
-  stroke: #fafafa;
-  fill: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.swiper-button-disabled svg {
-  stroke: #3b3b3b;
+.reviews-controls-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #fafafa;
+  fill: transparent;
 }
 
 .reviews-notfound {
@@ -78,18 +79,31 @@
   text-transform: uppercase;
 }
 
+.reviews .swiper-button-disabled {
+  border-color: #3b3b3b;
+}
+
+.reviews .swiper-button-disabled svg {
+  stroke: #3b3b3b;
+}
+
 @media screen and (min-width: 768px) {
   .reviews {
     padding: 48px 0;
   }
 
-  .reviews-button-wrapepr {
+  .reviews-controls {
     gap: 20px;
   }
 
-  .swiper-button-icon {
+  .reviews-controls-btn {
     width: 68px;
     height: 68px;
+  }
+
+  .reviews-controls-icon {
+    width: 32px;
+    height: 32px;
   }
 }
 
