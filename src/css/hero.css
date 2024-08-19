@@ -20,8 +20,12 @@
   color: #747bff;
 }
 
-.hero {
+//.hero {
+
+  padding-bottom: 32px;
+
   margin-bottom: 32px;
+
 }
 
 .content-wrapper {
@@ -96,7 +100,7 @@
 
 @media (min-width: 768px) {
   .hero {
-    margin-bottom: 64px;
+    padding-bottom: 32px;
   }
 
   .content-wrapper {
@@ -142,9 +146,8 @@
 
 @media (min-width: 1440px) {
   .hero {
-    margin-bottom: 96px;
+    padding-bottom: 48px;
   }
-
   .content-wrapper {
     width: 1440px;
     height: 900px;
