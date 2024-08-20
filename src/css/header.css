@@ -115,7 +115,6 @@
     margin-top: 289px;
   }
   .mobile-header {
-    width: 343px;
     height: 80px;
   }
   
@@ -168,10 +167,10 @@ header {
   background-repeat: no-repeat;
   background: transparent;
 }
-.profile-image {
+/* .profile-image {
   width: 172px;
   height: 80px;
-}
+} */
 .menu-toggle {
   display: none;
 }
@@ -244,6 +243,7 @@ header {
     background-color: transparent;
     margin-bottom: 52px;
     color: #FAFAFA;
+    
   }
   .mobile-header {
     width: 100%;
@@ -251,7 +251,8 @@ header {
     background-image: url('../images/hero_img/glass-tab.png');
     position: relative;
     background: transparent;
-    margin-top: 0;
+   padding-top: 32px;
+  
   }
   .menu-toggle {
     display: inline-block;
@@ -261,7 +262,8 @@ header {
     text-decoration-skip-ink: none;
     color: #FAFAFA;
     background-color: transparent;
-    padding-top: 32px;
+    padding-top: 10px;
+  
   }
   .mob-menu {
     visibility: hidden;
@@ -311,7 +313,7 @@ header {
     margin-bottom: 25px;
   }
   .menu-wrapper {
-    padding-bottom: 41px;
+  
   }
 }
 .menu-open-btn {
