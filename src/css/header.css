@@ -255,7 +255,7 @@ header {
 
 .menu a {
     display: block;
-    padding: 10px 20px;
+    padding: 0 20px;
     text-decoration: none;
     color: #fafafa;
     font-weight: 500;
@@ -272,15 +272,6 @@ header {
 .menu a:hover {
     color: #ed3b44;;
 }
-
-
-
-
-
-
-
-
-  /* ======= */
   .header {
     padding: 0;
     position: absolute;
@@ -297,7 +288,7 @@ header {
     background-color: transparent;
     margin-bottom: 52px;
     color: #FAFAFA;
-    padding-left: 96px;
+    padding-left: 84px;
     
   }
   .mobile-header {
@@ -366,9 +357,7 @@ header {
     border: none;
     margin-bottom: 25px;
   }
-  .menu-wrapper {
-  padding-left: 64px;
-  }
+  
 }
 .menu-open-btn {
   display: block;
@@ -393,6 +382,6 @@ header {
   }
 
   .menu-wrapper {
-    padding-left: 96px;
+    padding-left: 150px;
   }
 }

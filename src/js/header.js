@@ -6,12 +6,8 @@ button_open.addEventListener('click', () => {
     mobMenu.classList.add('is-open');
 });
 button_close.addEventListener('click', () => {
-    mobMenu.classList.remove('is-open')
+    mobMenu.classList.remove('is-open');
 });
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.querySelector('.menu-toggle');
@@ -26,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { href: '#frequently-asked-questions', text: 'FAQ' }
     ];
 
-  
     links.forEach(link => {
         const anchor = document.createElement('a');
         anchor.href = link.href;
@@ -35,21 +30,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     menuContainer.appendChild(menu);
-    menuButton.addEventListener('click', () => {
+    menuButton.addEventListener('click', (event) => {
+        event.preventDefault();
         if (menu.classList.contains('show')) {
-            menu.style.height = 0; 
+            menu.style.height = 0;
             setTimeout(() => {
                 menu.classList.remove('show');
-            }, 300); 
+            }, 300);
         } else {
             menu.classList.add('show');
             const menuHeight = menu.scrollHeight + 'px';
-            menu.style.height = menuHeight; 
+            menu.style.height = menuHeight;
         }
     });
 
     document.addEventListener('click', (event) => {
-        event.preventDefault();
         if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
             if (menu.classList.contains('show')) {
                 menu.style.height = 0;
@@ -60,27 +55,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    menu.addEventListener('click', (event) => {
+        
+        if (event.target.tagName === '') {
+            const targetId = event.target.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
 
-menu.addEventListener('click', (event) => {
-    if (event.target.tagName === 'A') {
-        event.preventDefault(); // Забороняємо стандартну дію
-        const targetId = event.target.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const offsetTop = targetElement.offsetTop;
 
-        if (targetElement) {
-            const offsetTop = targetElement.offsetTop;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
 
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth' // Плавний скрол
-            });
-
-            // Закриваємо меню після кліку
-            menu.style.height = 0;
-            setTimeout(() => {
-                menu.classList.remove('show');
-            }, 300);
+                menu.style.height = 0;
+                setTimeout(() => {
+                    menu.classList.remove('show');
+                }, 300);
+            }
         }
-    }
-});
+    });
 });
