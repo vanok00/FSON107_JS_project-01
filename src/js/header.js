@@ -4,6 +4,8 @@ const mobMenu = document.querySelector('.mob-menu');
 
 button_open.addEventListener('click', () => {
     mobMenu.classList.add('is-open');
+    // const fluency = mobMenu.scrollHeight + 'px';
+    // mobMenu.style.height = fluency;
 });
 button_close.addEventListener('click', () => {
     mobMenu.classList.remove('is-open');

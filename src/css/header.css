@@ -20,6 +20,7 @@
     opacity: 0;
     display: none;
     pointer-events: none;
+    transition:  0.3s ease;
   }
 
   .menu a{
@@ -238,8 +239,8 @@ header {
   .menu {
     display: none;
     position: absolute;
-    top: 70px;
-    left: 304px;
+    top: 75px;
+    left: 318px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     overflow: hidden;
@@ -377,8 +378,8 @@ header {
   }
 
   .menu{
-    top: 50px;
-    left: 550px;
+    top: 55px;
+    left: 585px;
   }
 
   .menu-wrapper {
