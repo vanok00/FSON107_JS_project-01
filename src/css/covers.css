@@ -1,21 +1,111 @@
-.header {
-  padding: 20px 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
-.nav-list {
+.covers {
+  background-color: #1C1D20;
+  background-image: url(./images/covers_img/covers-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 375px;
+  height: 508px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+  .covers {
+    background-image: url(./images/covers_img/covers-bg-mob-2x.png);
+  }
+}
+.covers-container {
+  position: relative;
+}
+.covers-inner-container {
+  position: absolute;
+  right: -800px;
+  left: 0;
+  overflow: hidden;
+}
+.covers-line {
+  display: flex;
+  transform: rotate(16deg);
+  margin-bottom: 35px;
+  width: fit-content;
+}
+.covers-line-item {
+  flex-shrink: 0;
+  margin-right: 30px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: center;
+  white-space: nowrap;
+  animation-name: runningLine;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
-
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.cover-line-img {
+  width: 282px;
+  height: 162px;
+  object-fit: cover;
 }
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+@keyframes runningLine {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(-350%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .covers {
+    background-image: url(./images/covers_img/covers-bg-tab.png);
+    max-width: 768px;
+    height: 960px;
+  }
+  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+    .covers {
+      background-image: url(./images/covers_img/covers-bg-tab-2x.png);
+    }
+  }
+  .covers-line {
+    margin-bottom: 60px;
+  }
+  .covers-line-item {
+    margin-right: 50px;
+  }
+  .cover-line-img {
+    width: 544px;
+    height: 314px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .covers {
+    background-image: url(./images/covers_img/covers-bg.png);
+    max-width: 1440px;
+    height: 960px;
+  }
+  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+    .covers {
+      background-image: url(./images/covers_img/covers-bg-2x.png);
+    }
+  }
+  @keyframes runningLine {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(-250%);
+    }
+  }
 }
