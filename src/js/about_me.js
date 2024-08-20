@@ -5,21 +5,16 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 
-
 new Accordion('.about-info-list', {elementClass: 'info-item',
     triggerClass: 'info-icon-wrapper',
     panelClass: 'info-item-panel',
 })
 
-const swiper = new Swiper('.tec-swiper-container', {
-  direction: 'horizontal',
+const nextBtn = document.querySelector('.about-button-next');
+
+const swiperAbout = new Swiper('.tec-swiper-container', {
+  spaceBetween: 0,
   loop: true,
-  effect: 'slide',
-  breakpointsBase: 'container',
-  slidesPerView: 2,
-  // slidesPerGroup: 4,
-  // slidesPerGroupSkip: 1,
-  // centeredSlides: false,
   breakpoints: {
     320: {
       slidesPerView: 2,
@@ -28,7 +23,7 @@ const swiper = new Swiper('.tec-swiper-container', {
       slidesPerView: 3,
     },
     1440: {
-      slidesPerView: 5,
+      slidesPerView: 6,
     },
   },
   navigation: {
@@ -38,3 +33,6 @@ const swiper = new Swiper('.tec-swiper-container', {
         enabled: true,
       },
 });
+
+
+  

@@ -1,39 +1,34 @@
-<section id="about" class="about-section">
+<section id="about-me" class="about-section">
     <div class="about-container container">
         <h2 class="about-title visually-hidden">About me</h2>
     <div class="about-first-wrapper">
         <div class="about-me">
             <p class="about-me-text">I work with people all over the world to create impressive and 
             <span class="about-me-text-decor">functional</span> 
-            <span class="about-me-text-second-decor">websites</span>
-             that reflect each client's unique personality.</p>
+            <span class="about-me-text-second-decor">websites</span> that reflect each client's unique personality.</p>
         </div>
         <div class="about-photo">
             <picture class="about-picture">
                 <source
-                   srcset="
-          ./images/about_me_img/about-me-desk.jpg,
-          ./images/about_me_img/about-me-desk-2x.jpg
-        "
+                  srcset="./images/about_me_img/about-me-desk.png 1x,
+                  ./images/about_me_img/about-me-desk-2x.png 2x"
                   media="(min-width: 1440px)"
                 />
                 <source
-                    srcset="
-          ./images/about_me_img/about-me-tab.jpg,
-          ./images/about_me_img/about-me-tab-2x.jpg
-        "
+                  srcset="./images/about_me_img/about-me-tab.png 1x,
+                  ./images/about_me_img/about-me-tab-2x.png 2x
+                  "
                   media="(min-width: 768px)"
                 />
                 <source
-   srcset="
-          ./images/about_me_img/mob-about-me-img.jpg,
-          ./images/about_me_img/mob-about-img-2x.jpg
-        "
+                  srcset="./images/about_me_img/mob-about-me-img.png 1x,
+                  ./images/about_me_img/mob-about-img-2x.png 2x
+                  "
                   media="(max-width: 767px)"
                 />
     
-                <img 
-                  src="./images/about_me_img/mob-about-me-img.jpg"
+                <img
+                  src="./images/about_me_img/mob-about-me-img.png"
                   alt="Lloyd Jefferson photo"
                 />
               </picture>
@@ -84,24 +79,24 @@
             <hr class="info-items-divider">
         </li>
     </ul>
-        
-    <div class="tec-swiper-container">
-            <div class="swiper-wrapper tec-list">
-              <!-- Slides -->
-              <div class="swiper-slide tec-item"><div class="tec-item-descr">HTML/CSS</div></div>
-              <div class="swiper-slide tec-item"><div class="tec-item-descr">JavaScript</div></div>
-              <div class="swiper-slide tec-item"><div class="tec-item-descr">React</div></div>
-              <div class="swiper-slide tec-item"><div class="tec-item-descr">Node.js</div></div>
-              <div class="swiper-slide tec-item"><div class="tec-item-descr">React Native</div></div>
-              <div class="swiper-slide tec-item"><div class="tec-item-descr">Soft skills</div></div>
-            </div>
-         <div class="tec-navigation">
-            <button class="about-button-next arrow-btn-next" type="button">
-                <svg class="tec-swipe-icon" width="28" height="28">
+<div class="tec">
+    <div class="swiper tec-swiper-container">
+        <ul class="swiper-wrapper tec-list">
+            <li class="swiper-slide tec-item">HTML/CSS</li>
+            <li class="swiper-slide tec-item">JavaScript</li>
+            <li class="swiper-slide tec-item">React</li>
+            <li class="swiper-slide tec-item">Node.js</li>
+            <li class="swiper-slide tec-item">React Native</li>
+            <li class="swiper-slide tec-item">Soft skills</li>
+            <li class="swiper-slide tec-item">Languages</li>
+        </ul>  
+    </div>
+    <div class="tec-navigation">
+        <button class="about-button-next" type="button">
+            <svg class="tec-swipe-icon" width="28" height="28">
                 <use href="./images/icons/icons.svg#icon-arrow-narrow-right1"></use>
-              </svg>
-            </button>
-        </div>    
-        </div>
-        
+            </svg>
+        </button>
+    </div>
+</div>
 </section>
