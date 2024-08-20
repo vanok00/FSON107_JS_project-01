@@ -16,17 +16,19 @@ visually-hidden {
 }
 
 .content {
+  margin-bottom: 45px;
   position: relative;
-    width: 1440px;
-    height: 960px;
+
     background-size: cover;
+    
+
 
 }
 
 
 .marquee {
     background-image: url('/images/covers_img/elements_vectors.png');
-    position: absolute;
+    /* position: absolute; */
     right: -800px;
     left: 0;
     overflow: hidden;
@@ -34,10 +36,9 @@ visually-hidden {
 
 
 .marquee__inner {
-  height: 100vh;
   display: flex;
   transform: rotate(16deg);
-
+  gap: 10px;
 }
 
 .marquee__line {
@@ -51,14 +52,22 @@ visually-hidden {
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  width: 282px;
+height: 162px;
+margin-bottom: 25px;
+}
+
+.big-pictures {
+width: 282px;
+max-height: 162px;
 }
  
-@media screen and (min-width: 375px) {
-  .container {
-    max-width: 375px;
+@media screen and (max-width: 767px) {
+  .marquee {
     padding-left: 24px;
     padding-right: 24px;
     margin: 0 auto;
+   height: 508px;
   }
 }
 
@@ -74,4 +83,54 @@ visually-hidden {
 
 
 
+<<<<<<< HEAD
 
+=======
+@media screen and (min-width: 768px) {
+  .marquee_line {
+    width: 544px;
+    height: 314px;
+  }
+
+  .content{
+    margin-bottom: 45px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 1440px) {
+  .marquee_line {
+    width: 544px;
+    height: 314px;
+
+  }
+
+  .big-pictures{
+    width: 544px;
+    height: 314px;
+
+  /* object-fit: cover; */
+  }
+  .marquee__inner {
+    gap: 40x;
+  }
+
+  .content{
+    margin-bottom: 45px;
+  }
+
+  @keyframes marqueeLine {
+    from {
+     transform: translateX(100%);
+    }
+  
+    to {
+      transform: translateX(-180%);
+    }
+  }
+
+
+}
+>>>>>>> ac8ac69520f62373cdb3126491c9831a93c3389e

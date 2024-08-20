@@ -1,21 +1,442 @@
-.header {
-  padding: 20px 0;
+
+@media (max-width: 767px) {
+  
+
+
+
+.mob-menu {
+  background-image: url(../images/header_img/Glass-effect.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 812px;
+  width: 375px;
+  padding-top: 240px;
+  padding-bottom: 40px;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+}
+.mob-menu-btn {
+  border: none;
+  width: 34px;
+  height: 34px;
+  background-color: transparent;
+  stroke-width: 1px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mob-btn-close-icon {
+  fill: none;
+  stroke: #fbfbfb;
 }
 
-.nav-list {
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.mob-menu-link {
+
+  font-weight: 500;
+font-size: 16px;
+letter-spacing: -0.02em;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #fafafa;
+}
+
+.mob-menu-link:hover,
+.mob-menu-link:focus,
+.mob-menu-link:active {
+  color: #3350e9;
+}
+.mob-underlin-menu-link::after {
+  content: '';
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  /* background-color: #3350e9; */
+  position: absolute;
+  bottom: -1px;
+  left: 95.5px;
+  top: 260px;
+}
+.mob-icon-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: center;
+  gap: 10px;
+}
+.mob-icon-item {
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  width: 34px;
+  height: 34px;
+}
+.mob-icon-linc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mob-icon-icon {
+  fill: rgba(251, 251, 251, 0.8);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.mob-icon-linc:hover > .mob-icon-icon,
+.mob-icon-linc:focus > .mob-icon-icon {
+  fill: #fbfbfb;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+
+.order-nav{
+  border-radius: 60px;
+background: #ed3b44;
+font-weight: 500;
+font-size: 14px;
+letter-spacing: -0.02em;
+color: #fafafa;
+width: 164px;
+height: 45px; 
+padding: 14px 25px;
 }
+
+.order-nav-container{
+ 
+  padding: 14px 31px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 289px;
+
+}
+
+}
+
+
+.mob-menu-link-nav{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-menu-open-btn {
+  border: 0;
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+  margin-bottom: 52px;
+}
+
+.is-open {
+  opacity: 1;
+  display: block;
+  pointer-events: auto;
+}
+
+header {
+  padding: 0;
+}
+
+.header-menu-icon-svg {
+  stroke: #0c0c0c;
+  fill: none;
+}
+/* .is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+} */
+
+.hidden {
+  display: none;
+  }
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+padding-top: 32px;
+/* margin-bottom: 85px; */
+background-image: url('../images/hero_img/glass-mob.png');
+  background-repeat: no-repeat;
+  background: transparent;
+}
+
+@media (max-width: 767px) {
+  .mobile-header{
+    width: 343px;
+    height: 80px;
+  }
+  .menu-btn {
+    display: block;
+    margin-left: auto;
+    border:#A11F24;
+    background: transparent;
+
+  }
+ 
+
+  
+}
+
+.profile-image {
+  width: 172px;
+  height: 80px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+
+/* .mobile-menu-overlay {
+  background-image: url(../images/header_img/Glass-effect.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+ 
+  padding-top: 240px;
+  padding-bottom: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+} */
+
+.active{
+  transform: translateX(0);
+}
+
+.close-icon {
+  position: absolute;
+  top: 32px;
+  right: 16px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.mobile-menu-nav{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.menu-link {
+font-weight: 500;
+font-size: 16px;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #fafafa;
+margin-bottom: 12px;
+}
+
+.menu-link:hover {
+  color: #A11F24;
+}
+
+.order-button {
+  background-color: #ed3b44;
+  min-width: 164px;
+border-radius: 60px;
+padding: 14px 31px;
+font-weight: 500;
+font-size: 14px;
+color: #fafafa;
+
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: #e0373f;
+
+}
+
+@media (max-width: 767px) {
+  .order-button-desktop{
+    display: none;
+  } 
+}
+
+
+/* tablet */
+@media (min-width: 768px) {
+  .header {
+      padding: 16px 32px;
+  }
+
+
+  
+  
+.menu-wrapper{
+  border: 0;
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+  margin-bottom: 52px;
+  color: #fafafa;
+}
+
+
+  .mobile-header {
+    width: 100%;
+    height: 124px;
+    background-image: url('../images/hero_img/glass-tab.png');
+    position: relative;
+    background: transparent;
+  }
+
+
+  .mobile-header{
+    margin-top: 32px;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    font-weight: 500;
+font-size: 16px;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #fafafa;
+background-color: transparent;
+padding-top: 32px;
+}
+.mob-menu {
+  visibility: hidden;
+}
+
+.order-button {
+    margin-left: auto;
+}
+
+
+.mobile-menu {
+display: none;
+position: absolute;
+top: 50px;
+right: 0;
+background-color: #333;
+width: 200px;
+padding: 20px;
+}
+
+.mobile-menu ul {
+list-style-type: none;
+padding: 0;
+}
+.mobile-menu-overlay {
+display: none;
+}
+
+.mobile-menu ul li {
+margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+color: white;
+text-decoration: none;
+}
+
+.hidden {
+display: none;
+}
+
+
+.burger-icon {
+  display: none;
+}
+
+.order-button-desktop {
+  border-radius: 60px;
+width: 163px;
+height: 55px;
+background: #ed3b44;
+font-weight: 500;
+font-size: 16px;
+letter-spacing: -0.02em;
+color: #fafafa;
+border: none;
+margin-bottom: 25px;
+}
+
+.menu-wrapper {
+padding-bottom: 41px;
+}
+
+
+}
+
+
+.menu-open-btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  /* background: transparent; */
+}
+
+@media (min-width: 1440px) {
+
+.mobile-header {
+  width: 1440px;
+  height: 80px;
+  background-image: url('../images/hero_img/glass-desk.png');
+  background: transparent;
+}
+}
+/*  */
+
+
+
+
