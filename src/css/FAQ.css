@@ -1,6 +1,6 @@
 .faq-section {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 64px;
 }
 
 .faq-header {
@@ -106,14 +106,14 @@
 @media (min-width: 768px) {
   .faq-section {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 96px;
   }
 }
 
 @media (min-width: 1440px) {
   .faq-section {
     padding-top: 82px;
-    padding-bottom: 82px;
+    padding-bottom: 164px;
   }
 
   .ac {

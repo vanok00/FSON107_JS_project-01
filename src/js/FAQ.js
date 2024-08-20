@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-document.querySelectorAll('.ac-trigger').forEach(button => {
-  button.addEventListener('click', () => {
-    const ac = button.closest('.ac');
-    ac.classList.toggle('is-active');
-  });
-});
+// document.querySelectorAll('.ac-trigger').forEach(button => {
+//   button.addEventListener('click', () => {
+//     const ac = button.closest('.ac');
+//     ac.classList.toggle('is-active');
+//   });
+// });
