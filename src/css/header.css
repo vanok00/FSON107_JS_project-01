@@ -21,6 +21,12 @@
     display: none;
     pointer-events: none;
   }
+
+  .menu a{
+    display: none;
+  }
+  
+
   .mob-menu-btn {
     border: none;
     width: 34px;
@@ -57,7 +63,7 @@
   .mob-menu-link:hover,
   .mob-menu-link:focus,
   .mob-menu-link:active {
-    color: #3350E9;
+    color: #ed3b44;
   }
   .mob-underlin-menu-link::after {
     content: '';
@@ -227,6 +233,54 @@ header {
 }
 
 @media (min-width: 768px) {
+
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 304px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    height: 0;
+    transition: height 0.3s ease; 
+}
+.menu.show {
+  display: block;
+  height: auto; 
+  transition: height 0.3s ease; 
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FAFAFA;
+    background-color: transparent;
+    padding-top: 10px;
+}
+
+.menu a:last-child {
+    border-bottom: none;
+}
+
+.menu a:hover {
+    color: #ed3b44;;
+}
+
+
+
+
+
+
+
+
+  /* ======= */
   .header {
     padding: 0;
     position: absolute;
@@ -243,6 +297,7 @@ header {
     background-color: transparent;
     margin-bottom: 52px;
     color: #FAFAFA;
+    padding-left: 96px;
     
   }
   .mobile-header {
@@ -263,7 +318,6 @@ header {
     color: #FAFAFA;
     background-color: transparent;
     padding-top: 10px;
-  
   }
   .mob-menu {
     visibility: hidden;
@@ -313,7 +367,7 @@ header {
     margin-bottom: 25px;
   }
   .menu-wrapper {
-  
+  padding-left: 64px;
   }
 }
 .menu-open-btn {
@@ -331,5 +385,14 @@ header {
     height: 80px;
     background-image: url('../images/hero_img/glass-desk.png');
     background: transparent;
+  }
+
+  .menu{
+    top: 50px;
+    left: 550px;
+  }
+
+  .menu-wrapper {
+    padding-left: 96px;
   }
 }
