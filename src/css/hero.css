@@ -20,7 +20,7 @@
   color: #747bff;
 }
 
-//.hero {
+.hero {
 
   padding-bottom: 32px;
 
@@ -54,6 +54,7 @@
   text-transform: uppercase;
   color: #fafafa;
   margin: 0;
+  padding: 24px 32px;
 }
 @media (max-width: 767px) {
   .social-media {

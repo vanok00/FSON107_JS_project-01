@@ -36,27 +36,6 @@
         });
     });
 
-
-    if (refs.orderProject) {
-        refs.orderProject.addEventListener('click', (event) => {
-            event.preventDefault();
-
-            const targetId = refs.orderProject.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-
-            if (targetElement) {
-                const offsetTop = targetElement.offsetTop;
-
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-
-                toggleModal();
-            }
-        });
-    }
-
     if (refs.orderProjectMob) {
         refs.orderProjectMob.addEventListener('click', (event) => {
             event.preventDefault();
