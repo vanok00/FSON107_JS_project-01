@@ -261,7 +261,8 @@ margin-bottom: 16px;
   .form-section {
     padding-left: 196px;
     padding-right: 196px;
-    padding-top: 125px;
+    padding-top: 80px;
+    padding-bottom: 169px;
     max-width: 1440px;
   }
   .text-input,

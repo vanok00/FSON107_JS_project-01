@@ -90,7 +90,7 @@
 
 @media screen and (min-width: 768px) {
   .reviews {
-    padding: 96px 0 48px;
+    padding: 96px 0 88px;
   }
 
   .reviews-controls {
@@ -110,6 +110,6 @@
 
 @media screen and (min-width: 1440px) {
   .reviews {
-    padding: 164px 0 82px;
+    padding: 164px 0;
   }
 }
