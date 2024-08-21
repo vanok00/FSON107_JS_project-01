@@ -6,6 +6,7 @@
   padding-top: 48px;
   padding-bottom: 32px;
 }
+
 .form-title {
   color: #FAFAFA;
   font-size: 40px;
@@ -158,12 +159,8 @@
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* color: #FAFAFA; */
 }
-/* .close-button:hover,
-.close-button:focus {
-  transform: rotate(90deg);
-} */
+
 .close-icon {
   stroke: #FAFAFA;
   width: 22px;

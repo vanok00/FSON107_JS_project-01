@@ -91,18 +91,6 @@ ol {
   color: rgba(250, 250, 250, 0.6);
 }
 
-/* .order-container {
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  padding: 9px 18px;
-  width: 187px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 10px;
-} */
 .order-link {
   font-weight: 500;
   font-size: 16px;
@@ -117,7 +105,6 @@ ol {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  /* gap: 10px; */
 }
 
 /* СТИЛІ ДЛЯ ПЛАНШЕТУ  */
@@ -150,21 +137,17 @@ ol {
     padding-bottom: 82px;
     padding-left: 32px;
     padding-right: 32px;
-    /* margin: auto; */
     width: 1440px;
     display: flex;
     justify-content: space-between;
   }
-  .info-container {
-  }
+ 
 
   .benefits-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 64px;
-    /* row-gap: 16px;
-    column-gap: 16px; */
     width: 680px;
   }
   .benefits-item {

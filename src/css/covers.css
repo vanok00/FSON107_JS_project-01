@@ -21,6 +21,7 @@
   margin: 0 auto;
   overflow: hidden;
 }
+
 @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
   .covers {
     background-image: url(../images/covers_img/covers-bg-mob-2x.png);
