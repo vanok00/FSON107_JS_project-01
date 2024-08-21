@@ -92,7 +92,10 @@ form.addEventListener("submit",sumbitAction)
             
     }
     else
-    alert("Fill please all fields")
+    iziToast.error({
+      position:'topRight',
+      message:'Fill please all fields'
+          })
 }
 
 
