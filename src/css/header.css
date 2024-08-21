@@ -411,8 +411,14 @@
     transform: translate(55%, 50%);
   }
 
-}
+  .menu{
+    /* top: 55px;
+    left: 585px; */
+  }
 
+  .menu-wrapper {
+  }
+}
 
 
 
