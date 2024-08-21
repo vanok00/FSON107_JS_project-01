@@ -66,8 +66,10 @@
   letter-spacing: -0.32px;
   color: rgba(250, 250, 250, 0.60);
   border: none;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.20);
-  transition: border-bottom color .3s cubic-bezier(.4,0,.2,1);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(250, 250, 250, 0.20);
+  transition: border-bottom-color .3s cubic-bezier(.4,0,.2,1);
 }
 .email-input::placeholder,
 .text-input::placeholder {
@@ -81,7 +83,7 @@
 }
 .email-input:hover,
 .text-input:hover {
-  border-bottom: 1px solid rgba(250, 250, 250);
+  border-bottom-color:  rgba(250, 250, 250);
 }
 .email-input:invalid{
   border-bottom: 1px solid #E74A3B;
