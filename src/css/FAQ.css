@@ -44,19 +44,15 @@
   width: 100%;
   text-align: left;
   font-size: 20px;
-
   display: flex;
   justify-content: space-between;
-
   color: #fafafa;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: -0.4px;
   cursor: pointer;
-
-  align-items: baseline;
   gap: 20px;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .icon-wrapper {
@@ -105,9 +101,14 @@
 
 @media (min-width: 768px) {
   .faq-section {
-    padding-top: 32px;
+    padding-top: 48px;
     padding-bottom: 96px;
   }
+
+  .ac-trigger{
+    padding: 32px 0;
+  }
+
 }
 
 @media (min-width: 1440px) {

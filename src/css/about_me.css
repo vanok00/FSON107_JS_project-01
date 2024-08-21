@@ -1,3 +1,11 @@
+.about-section{
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+
+
+
 .about-container {
   margin: auto;
 }
@@ -239,6 +247,10 @@
 
 @media screen and (min-width: 768px) {
 
+  .about-section{
+    padding-bottom: 48px;
+  }
+
   .about-first-wrapper {
     margin-bottom: 64px;
   }
@@ -317,6 +329,12 @@
 }
 
 @media screen and (min-width: 1440px) {
+
+  .about-section{
+    padding-bottom: 82px;
+    padding-top: 48px;
+  }
+
   .about-first-wrapper {
     flex-direction: row;
     margin-bottom: 96px;
