@@ -302,7 +302,7 @@
     justify-content: space-between;
     align-items: center;
     background: transparent;
-    padding-left: 32px;
+
   
   }
 
@@ -384,6 +384,7 @@
     height: 80px;
     background-image: url('../images/hero_img/glass-desk.png');
     background: transparent;
+    
   }
 
   .menu{

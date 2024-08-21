@@ -53,7 +53,7 @@
   text-transform: uppercase;
   color: #fafafa;
   margin: 0;
-  padding: 24px 32px;
+  /* padding: 24px 32px; */
 }
 @media (max-width: 767px) {
   .social-media {
@@ -104,6 +104,7 @@
   }
 
   .content-wrapper {
+    padding: 32px;
     width: 734px;
     height: 1024px;
     background-image: url('../images/hero_img/glass-tab.png');
