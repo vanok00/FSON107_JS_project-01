@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mob-menu {
     z-index: 999;
     display: flex;
@@ -248,7 +248,7 @@
   display: none;
 }
   .menu {
-    display: none;
+ display: none;
     position: absolute;
     top: 75px;
     left: 318px;
@@ -256,7 +256,7 @@
     border-radius: 4px;
     overflow: hidden;
     text-align: center;
-    height: 0;
+    /* height: 0; */
     transition: height 0.3s ease; 
 }
 
@@ -269,7 +269,9 @@
   transition: height 0.3s ease;
   background-color: transparent;
   position: absolute;
-  left: 334px;
+  left: 328px;
+  width: 70px;
+  
 }
 
 .menu a:last-child {
@@ -279,6 +281,10 @@
 .menu a:hover {
     color: #ed3b44;;
 }
+.menu a{
+  padding-bottom: 5px;
+}
+
   .header {
     padding: 0;
     position: absolute;
@@ -372,7 +378,7 @@
 @media (min-width: 1440px) {
 
   .menu.show {
-    left: 341px;
+    left: 335px;
   }
   
   .mobile-header {
