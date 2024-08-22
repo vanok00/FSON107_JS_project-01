@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .mob-menu {
     z-index: 999;
     display: flex;
