@@ -13,6 +13,37 @@ html {
     margin: 0 auto;
   }
 
+
+  .scroll-up-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 52px;
+    min-height: 52px;
+    border-radius: 50%;
+    border: 1px solid #ED3B44;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .scroll-up-btn:hover {
+    background-color: #ED3B44;
+  }
+  .scroll-icon {
+    fill: #ED3B44;
+    width: 24px;
+    height: 24px;
+    transform: rotate(-90deg);
+  }
+  .scroll-up-btn:hover > .scroll-icon {
+    fill: #FAFAFA;
+  }
+
 @media screen and (min-width: 375px) {
     .container {
       max-width: 375px;
