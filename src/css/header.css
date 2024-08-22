@@ -96,6 +96,28 @@
   .mob-menu-link:active {
     color: #ed3b44;
   }
+
+.mob-menu-link-nav{
+  border-radius: 60px;
+  background: #ED3B44;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #FAFAFA;
+  border: none;
+  padding: 14px 32px;
+  list-style-type: none;
+}
+.mob-menu-item-nav{
+  list-style-type: none;
+}
+
+.mob-menu-link-nav:hover,
+.mob-menu-link-nav:focus {
+  background-color: #e0373f;
+}
+
+
   .mob-underlin-menu-link::after {
     content: '';
     border-radius: 50%;
@@ -256,9 +278,9 @@
     border-radius: 4px;
     overflow: hidden;
     text-align: center;
-    /* height: 0; */
     transition: height 0.3s ease; 
 }
+
 
 .menu.show {
   display: flex;
@@ -321,6 +343,12 @@
     padding-top: 10px;
     position: relative;
   }
+
+  .menu-toggle:hover{
+    color: #ed3b44;;
+  }
+
+
   .mob-menu {
     visibility: hidden;
   }
@@ -367,6 +395,10 @@
     margin-bottom: 25px;
     padding: 18px 24px;
   }
+  .order-button-desktop:hover,
+    .order-button-desktop:hover{
+  background-color: #e0373f;
+}
   
 }
 .menu-open-btn {

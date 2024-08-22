@@ -64,6 +64,11 @@
   }
 }
 
+.social-media a:hover{
+    border: 1px solid rgba(250,250, 250);
+  }
+
+
 .smi {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
@@ -126,6 +131,11 @@
     width: 55px;
     height: 55px;
   }
+
+  .social-media a:hover{
+    border: 1px solid rgba(250,250, 250);
+  }
+  
   .social-media-item5 {
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
