@@ -34,6 +34,7 @@ form.addEventListener("submit",sumbitAction)
         const closeModal = () => {
             modalWindow.classList.remove("is-open");
             backdrop.classList.remove("is-open");
+            document.body.style.overflow = '';
           };
         const resp = await axios.post('/requests',{email:formEmail.value.trim(), comment:formComment.value.trim()})
         modalButton.addEventListener("click", closeModal)
@@ -41,6 +42,7 @@ form.addEventListener("submit",sumbitAction)
         console.log(resp);
         backdrop.classList.add("is-open")
         modalWindow.classList.add("is-open")
+        document.body.style.overflow = 'hidden'
         iziToast.success({
             position:"topRight",
             message:'Succeed!'
