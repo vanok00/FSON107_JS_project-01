@@ -15,6 +15,7 @@
 
     function toggleModal() {
         refs.modal.classList.toggle("is-open");
+        document.body.classList.toggle('no-scroll');
     }
 
     refs.menuLinks.forEach(link => {

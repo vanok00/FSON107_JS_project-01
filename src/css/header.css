@@ -182,6 +182,11 @@
   .order-button-desktop {
     display: none;
   }
+
+  .no-scroll {
+    overflow: hidden;
+}
+
 }
 .header-menu-open-btn {
   border: 0;
